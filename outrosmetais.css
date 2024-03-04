@@ -1,0 +1,25 @@
+
+body{
+	font:1em/1 'Montserrat', sans-serif;
+	color:rgb(255, 255, 255);
+	padding:1em 5%;
+	background:var(--bg-preto);	
+}
+
+:root{
+    --bg-preto:rgb(0, 0, 0);
+    --Outro-Metais: rgb(5, 98, 98);
+}
+
+h1{ 
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 75px ;
+    color:var(--Outro-Metais)
+}
+p{
+    text-align:justify;
+}
+p+p{
+    text-align: end;
+}

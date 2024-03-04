@@ -1,0 +1,209 @@
+/* 1 css */
+*{
+	margin:0;
+	padding:0;
+	list-style:none;
+    box-sizing:border-box;
+}
+
+/*Variavel de cor */
+:root{
+	--bg-preto:rgb(0, 0, 0);
+	--nao-metal:rgb(255, 0, 0);
+	--gas-nobre:rgb(59, 159, 216);
+	--metal-alcalino:rgb(182, 20, 207);
+	--metal-alcalino-terroso:rgb(10, 121, 30);
+	--semimetal:rgb(110,200,190);
+	--halogenio:rgb(173, 80, 145);
+	--outros-metais:rgb(5, 98, 98);
+	--metal-transicao:rgb(255, 247, 0);
+	--lantanideo:rgb(19, 100, 43);
+	--actinidio:rgb(136, 21, 107);
+}
+
+/* Fundo do site*/
+body{
+	font:1em/1 'Montserrat', sans-serif;
+	color:rgb(255, 255, 255);
+	text-align:center;
+	padding:1em 5%;
+	background:var(--bg-preto);	
+}
+
+/* Variaveis para a cor*/
+
+.Nelemento{
+color:var(--nao-metal);
+}
+
+.GNelemento{
+    color:var(--gas-nobre)
+}
+
+.SMelemento{
+    color:var(--semimetal)
+}
+
+.PTMelemento{
+    color:var(--outros-metais);
+}
+
+.MDTelemento{
+    color:var(--metal-transicao);
+}
+
+.LAelemento{
+    color:var(--lantanideo);
+}
+
+.ACelemento{
+    color:var(--actinidio);
+}
+
+.MAelemento{
+    color:var(--metal-alcalino)
+}
+
+.MATelemento{
+    color:var(--metal-alcalino-terroso)
+}
+
+.DSelemento{
+    color:var(--halogenio);
+}
+
+/*Estilo das Letras*/
+
+h1{
+    font-style:italic;
+	margin: 0.5em 0;
+	font-size:calc(2vw + 1rem);
+	font-weight:100;
+	text-transform:uppercase;
+	letter-spacing:-.05em;
+
+}
+
+h2{
+    font-size: 2em;
+}
+p:last-child{
+	font-size:.8em;	
+}
+
+/*Estilo da grade*/
+main{
+    margin: auto;
+    max-width: 45em;
+    display: flex;
+}
+
+#grid-container{
+	flex-grow:1;
+	min-width:7em;	
+}
+
+.col-hidden{
+	display:none;	
+}
+
+/*Grade */
+section{
+	height:7em;
+	background:var(--bg-preto);	
+	border:.125rem solid;
+	border-radius:.25rem;	
+	line-height:1.25;
+	margin-bottom:.5em;
+	position:relative;
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+}
+
+/*Rodapé*/
+footer{
+	font-size:.8em;
+	text-align:left;	
+	flex-basis:13.5rem;
+	margin:-.25em 0 0 1em;
+}
+
+ul{
+	display:flex;
+	flex-wrap:wrap;
+  position:sticky;
+  top:1em;
+}
+
+li{
+	flex-basis:100%;
+	line-height:1.25;
+	margin-bottom:1em;	
+}
+
+li:before{
+	content:' ';
+	display:inline-block;
+	width:1em;
+	height:1em;
+	border:.125em solid;
+	border-radius:.125rem;	
+	margin-right:.5em;
+	position:relative;
+	top:.25em;
+}
+
+/*estilo*/
+body{
+    font-size:.65em;
+    padding:2em;	
+}
+main{
+    max-width:130.5em;
+    display:block;}
+
+/*Tabela estilo*/
+section{
+    margin:0;
+}
+    
+section:hover{
+    transition:.2s;
+    transform:scale(1.5);
+    cursor:pointer;
+    z-index:2;
+}
+
+/*Rodape 2*/ 
+footer{
+    font-size:1em;
+    width:100%;
+    margin:2em 0;
+}
+
+ul{
+    justify-content:center;
+}
+
+li{
+    flex-basis:auto;
+    margin-bottom:0;	
+}
+
+li + li{
+    margin-left:2em;	
+}	
+    
+body{
+    font-size:.75em;	
+}	
+td {
+    width: 80px;
+    height: 80px;
+    text-align: center;
+    }
+    
+    br {
+    margin: 20px;
+}
